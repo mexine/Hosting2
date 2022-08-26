@@ -1,0 +1,168 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 13%;
+}
+
+.navbar li{
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 30px;
+}
+
+.navbar a.underline{
+    color: #828282;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+.underline{
+    display:inline-block;
+    position: relative;
+}
+
+.underline::before{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:2px;
+    background-color:rgb(148, 194, 148);
+    transition:width 0.25s ease-out ;
+}
+
+.underline:hover::before{
+    width:100%;
+    left:0;
+    right:auto;
+}
+
+.open-slide{
+    float: right;
+    margin-right: 50px;
+    margin: 45px;
+}
+
+.side-nav{
+    float: right;
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    background-color: #828282;
+    overflow-x: hidden;
+    padding-top:75px;
+    transition: 0.5s;
+}
+
+.side-nav li{
+    display: block;
+    margin: 43px 50px;
+}
+
+.side-nav a.underline{
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+    display: inline-block;
+    transition: 0.3s;
+    padding-bottom: 1rem;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top:0;
+    left:22px;
+    font-size: 50px;
+    margin-right: 50px;
+    color: whitesmoke
+}
+
+.side-nav .btn-close:hover{
+    text-decoration: none;
+    color: rgb(148, 194, 148);
+}
+
+.main-sec{
+    margin-left: 20%;
+    margin-top: 25%;
+}
+
+.main-sec h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.main-sec p{
+    font-size: 16px;
+}
+
+.main-social{
+    margin-left: 20%;
+    margin-top: 40px;
+    display: flex;
+}
+
+.main-social a{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: rgb(54, 51, 51);
+    background-color: rgb(148, 194, 148);
+}
+
+.main-social a:hover{
+    text-decoration: none;
+    color: rgb(148, 194, 148);
+    background-color:  rgb(54, 51, 51);
+}
+
+#main{
+    padding: 20px;
+    overflow:hidden;
+    width: 50%;
+}
+
+@media(max-width:750px){
+    .navbar-nav{display:none}
+    #main{
+        width: 90%;
+    }
+}
+
+@media(min-width:750px){
+    .open-slide{display:none}
+}

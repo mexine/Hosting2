@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxen</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#828282"
+                    stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#828282"
+                    stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#828282"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt=""></a>  
+        </div>
+
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="underline">Home <i class="glyphicon glyphicon-home"></i></a></li>
+            <li><a href="about.html" class="underline">About <i class="glyphicon glyphicon-info-sign"></i></a> </li>
+            <li><a href="#" class="underline">Portfolio <i class="glyphicon glyphicon-folder-open"></i></a></i></li>
+            <li><a href="contact.html" class="underline">Contact <i class="glyphicon glyphicon-phone-alt"></i></a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <ul>
+            <li><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a> <!--&times;, X button--></li>
+            <li><a href="index.html" class="underline">Home <i class="glyphicon glyphicon-home"></i></a></li>
+            <li><a href="about.html" class="underline">About <i class="glyphicon glyphicon-info-sign"></i></a></li>
+            <li><a href="#" class="underline">Portfolio <i class="glyphicon glyphicon-folder-open"></i></a></li>
+            <li><a href="contact.html" class="underline">Contact <i class="glyphicon glyphicon-phone-alt"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="box">
+            <div class="container">
+                <div class="title">
+                    <h1>Maxine Tejada</h1>
+                </div> 
+                <div class="content">
+                    <h2>Aspiring Full-Stack Developer</h2>
+                    <p>
+                        Hi! My name is Maxine Tejada. A Computer Science student from Polytechnic University of the Philippines 
+                        who aspire to become a Full Stack Developer.
+                    </p>
+                </div>
+                <div class="button">
+                    <a href="contact.html" class="btn">Hire Me</a>
+                </div>  
+            </div>
+            <div class="image">
+                <img src="mex.jpg" alt="Photograph of Myself">
+            </div>  
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width
+            = '340px';
+        }
+
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width
+            = '0';
+        }
+    </script>
+</body>
+</html>
